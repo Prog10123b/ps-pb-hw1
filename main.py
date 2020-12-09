@@ -73,18 +73,11 @@ page2 = """
 if __name__ != "__main__":
     exit()
 
-print("""Внимание, изображение будет выводится бесконечно,
-при необходимости, остановите программу вручную!
- 
----------------старт через 5 секунд---------------""")
-
-sleep(4)
-
-while True:
+for i in range(4):
     sleep(1)
     system("cls")
     print(page1, end="\r")
-    
+
     sleep(1)
     system("cls")
     print(page2, end="\r")
